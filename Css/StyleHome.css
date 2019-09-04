@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+ box-sizing: border-box;
+}
+.menu a {
+    color:white;
+    background: #254441;
+    display: block;
+    height: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    display: flex;
+    /* Alinhamento do texto dentro da caixa  */
+    align-items: center;
+/* alinhamento do nome entre os lados  */
+    justify-content: center;
+    text-decoration: none;
+    transition: backgroud 0.4s;
+
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+   
+}
+.menu li {
+width: 100%;
+text-align: center;
+position: relative;
+
+}
+.menu li:hover .submenu >li {
+display: block;
+top:0px;
+}
+.menu a:hover{
+color:cyan;
+}
+
+.submenu li {
+    display: none;
+  margin: 1px;
+
+    }
+.submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    
+}
